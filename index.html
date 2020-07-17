@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <title>Shop.com - Take Home Assignment</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <section id="section-sort">
+            <button id="sort-button">Sort <i class="fas fa-chevron-down" id="carrot"></i></button>
+        </section>
+        <section id="section-cart">
+            <div id="cart-icon">
+                <img src="https://img.shop.com/Image/resources/images/icon-shopping-cart.svg">
+            </div>
+        </section>
+    </header>
+    <section id="products"></section>
+    <aside id="cart" style="display: none">
+        <section class="section-header">
+            <p id="section-title">Your Shopping Cart</p>
+            <i class="far fa-times-circle" id="close-cart"></i>
+        </section>
+        <section id="cart-products"></section>
+        <section id="cart-checkout">
+            <div id="cart-checkout-btn">Proceed to Checkout</div>
+        </section>
+    </aside>
+    <aside id="modal-added-to-cart" class="overlay" style="display: none">
+        <section class="modal-background">
+            <section id="added-to-cart-message">
+                <p>Item has been added to your cart.</p>
+            </section>
+            <section id="added-to-cart-buttons">
+                <button id="keep-shopping" class="model-btn">Keep Shopping</div>
+                    <button id="view-cart" class="model-btn">View Cart</div>
+            </section>
+        </section>
+    </aside>
+    <aside id="modal-sort" class="overlay" style="display: none">
+        <section class="sort-modal-background">
+            <section class="section-header">
+                <p id="section-title">Sort Options</p>
+                <i class="far fa-times-circle" id="close-sort"></i>
+            </section>
+            <section id="sort-types">
+                <div>
+                    <input type="radio" name="sort" value="titleAsc">
+                    <label for="titleAsc">Title (Ascending)</label>
+                </div>
+                <div>
+                    <input type="radio" name="sort" value="titleDes">
+                    <label for="titleDes">Title (Descending)</label>
+                </div>
+                <div>
+                    <input type="radio" name="sort" value="priceAsc" checked>
+                    <label for="priceAsc">Price (Low to High)</label>
+                </div>
+                <div>
+                    <input type="radio" name="sort" value="priceDes">
+                    <label for="priceDes">Price (High to Low)</label>
+                </div>
+                <div>
+                    <input type="radio" name="sort" value="brandAsc">
+                    <label for="brandAsc">Brand (Ascending)</label>
+                </div>
+                <div>
+                    <input type="radio" name="sort" value="brandDes">
+                    <label for="brandDes">Brand (Descending)</label>
+                </div>
+                <div>
+                    <input type="radio" name="sort" value="availability">
+                    <label for="availability">Availability</label>
+                </div>
+            </section>
+        </section>
+    </aside>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
